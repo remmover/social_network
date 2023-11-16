@@ -1,4 +1,3 @@
 [build]
-command = "make.bat html"
-publish = "docs/_build/html/index"
-
+publish = "_build/html"
+command = "make html"
