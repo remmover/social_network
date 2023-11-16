@@ -14,7 +14,7 @@ router = APIRouter(prefix="/comments", tags=["comments"])
 @router.post("/", response_model=CommentResponseSchema)
 async def create_comment(
     post_id: int,
-    content: str,
+    comment: str,
     current_user: User = Depends(auth_service.get_current_user),
     db: AsyncSession = Depends(get_database_session),
 ):
@@ -29,12 +29,12 @@ async def create_comment(
         raise HTTPException(status_code=404, detail=messages.POST_NOT_FOUND)
 
     new_comment = await repository_comments.create_new_comment(
-        content, current_user.id, post_id, db
+        comment, current_user.id, post_id, db
     )
     return new_comment
 
 
-@router.put("/")
+@router.put("/update")
 async def update_comment(
     body: CommentUpdateSchema,
     current_user: User = Depends(auth_service.get_current_user),
