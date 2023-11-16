@@ -27,6 +27,15 @@ class DatabaseSessionManager:
     """
 
     def __init__(self, url: str):
+        """
+        The __init__ function is called when the class is instantiated.
+        It sets up the database connection and sessionmaker, which will be used for all queries.
+
+        :param self: Represent the instance of the class
+        :param url: str: Create the engine
+        :return: The class instance itself, which is self
+        
+        """
         self._engine: AsyncEngine | None = create_async_engine(url)
         self._session_maker: async_sessionmaker | None = async_sessionmaker(
             autocommit=False, autoflush=False, expire_on_commit=False, bind=self._engine
