@@ -1,3 +1,4 @@
 [build]
-    publish = "_build/html"
-    command = "make html"
+base = ""
+publish = "build/html"
+command = "pip install -r requirements.txt && sphinx-build -b html source build/html"
