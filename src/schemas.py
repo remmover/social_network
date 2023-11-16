@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date
 from typing import List
 
 from pydantic import BaseModel, ConfigDict, EmailStr, Field
@@ -27,18 +27,9 @@ class CommentUpdateSchema(BaseModel):
     comment: str = Field(max_length=300)
 
 
-class PostAnalyticsResponseSchema(BaseModel):
-    date: str
-    likes: int
-    dislikes: int
-
-
-class PostAnalyticsListResponseSchema(BaseModel):
-    analytics_data: List[PostAnalyticsResponseSchema]
-
-
 class PostCreateResponseSchema(BaseModel):
     post: str
+    id: int
 
 
 class PostDislikeResponseSchema(BaseModel):

@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2d4e96-db2a-4337-89db-038b92cef27c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/documentation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/3c248ecd956d_init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conf/messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conf/messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/analytics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/analytics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/analytics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/analytics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +68,7 @@
       <recent name="C:\Mein\Projects\Tests_for_work\social_network\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="automated_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="social_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +143,10 @@
       <workItem from="1700155023561" duration="733000" />
       <workItem from="1700157896856" duration="453000" />
       <workItem from="1700158485453" duration="3692000" />
-      <workItem from="1700162357267" duration="1868000" />
+      <workItem from="1700162357267" duration="2507000" />
+      <workItem from="1700164924243" duration="297000" />
+      <workItem from="1700165557405" duration="4060000" />
+      <workItem from="1700169764433" duration="941000" />
     </task>
     <servers />
   </component>
@@ -139,8 +154,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/social_network$main.coverage" NAME="main Coverage Results" MODIFIED="1700153889970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/social_network$main.coverage" NAME="main Coverage Results" MODIFIED="1700170610701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/social_network$automated_bot.coverage" NAME="automated_bot Coverage Results" MODIFIED="1700151433474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/social_network$.coverage" NAME=" Coverage Results" MODIFIED="1700154414943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/social_network$.coverage" NAME=" Coverage Results" MODIFIED="1700164636624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>

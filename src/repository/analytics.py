@@ -30,30 +30,22 @@ async def get_post_analytics(
     Raises:
         HTTPException: If the user does not have access to view the analytics data for the post.
     """
-    owner_check_stmt = select(Post.user_id).where(Post.id == post_id)
-    owner_result = await db.execute(owner_check_stmt)
-    owner = owner_result.scalar_one_or_none()
 
-    if owner != user.id:
-        raise HTTPException(status_code=400, detail=messages.NOT_ACCESS_ANALYTICS)
+    post = await db.get(Post, post_id)
+    if post is None or post.user_id != user.id:
+        raise HTTPException(status_code=403, detail=messages.NOT_ACCESS_ANALYTICS)
 
-    stmt = (
-        select(
-            func.date(PostReaction.created_at).label('date'),
-            func.count(case((PostReaction.reaction == 'like', 1), else_=0)).label('likes'),
-            func.count(case((PostReaction.reaction == 'dislike', 1), else_=0)).label('dislikes')
+    stmt = select(PostReaction).where(
+        and_(
+            PostReaction.post_id == post_id,
+            PostReaction.created_at.between(date_from, date_to)
         )
-        .where(
-            and_(
-                PostReaction.post_id == post_id,
-                PostReaction.created_at >= date_from,
-                PostReaction.created_at <= date_to
-            )
-        )
-        .group_by(func.date(PostReaction.created_at))
     )
 
-    result = await db.execute(stmt)
-    reactions_data = result.all()
+    results = await db.execute(stmt)
+    analytics_data = results.scalars().all()
 
-    return reactions_data
+    num_likes = sum(1 for r in analytics_data if r.reaction == 'like')
+    num_dislikes = sum(1 for r in analytics_data if r.reaction == 'dislike')
+
+    return {'likes': num_likes, 'dislikes': num_dislikes}

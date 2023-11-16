@@ -24,10 +24,9 @@ async def create_post(
     Accepts the post content as a string and adds it to the database, associating it with the current user.
     Raises an HTTPException if a post with the same content already exists.
     """
-    try:
-        new_post = await repository_posts.create_post(content, current_user, db)
-    except IntegrityError:
-        raise HTTPException(status_code=400, detail=messages.POST_EXISTS)
+
+    new_post = await repository_posts.create_post(content, current_user, db)
+
     return new_post
 
 
@@ -46,7 +45,7 @@ async def like_post(
     try:
         like = await repository_posts.like_post(post_id, current_user, db)
     except IntegrityError:
-        raise HTTPException(status_code=400, detail=messages.ALREADY_LIKED)
+        raise HTTPException(status_code=400, detail=messages.ERROR)
     return like
 
 
@@ -65,5 +64,5 @@ async def unlike_post(
     try:
         unlike = await repository_posts.dislike_post(post_id, current_user, db)
     except IntegrityError:
-        raise HTTPException(status_code=400, detail=messages.ALREADY_UNLIKED)
+        raise HTTPException(status_code=400, detail=messages.ERROR)
     return unlike

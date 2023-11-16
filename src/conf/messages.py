@@ -16,7 +16,7 @@ PASSWORD_RESET_EMAIL_SUCCESS = "Email for reset password sent successfully"
 PASSWORD_RESET_SUCCESS = "Password reset successfully"
 USER_NOT_FOUND = "User not found"
 NO_ACCESS = "Access denied"
-
+ERROR = "Unknown error"
 
 """Access Control and Authorization"""
 NOT_ACCESS_ANALYTICS = "Unauthorized access: User does not own the post."

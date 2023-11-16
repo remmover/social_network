@@ -106,7 +106,7 @@ def signup_user(base_url, username):
     :return: A 201 status code if the user was created successfully
     
     """
-    time.sleep(1)
+    time.sleep(2)
     payload = {
         "username": username,
         "email": f"{username}@example.com",
@@ -276,7 +276,7 @@ if __name__ == "__main__":
     number_of_users = int(config['BotConfiguration']['number_of_users'])
     max_posts_per_user = int(config['BotConfiguration']['max_posts_per_user'])
     max_likes_per_user = int(config['BotConfiguration']['max_likes_per_user'])
-    total_posts = number_of_users * (max_posts_per_user / 2)
+    total_posts = number_of_users * (max_posts_per_user / 2.5)
 
     signup_users(base_url, number_of_users)
 

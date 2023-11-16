@@ -6,13 +6,12 @@ from src.conf import messages
 from src.database.connect import get_database_session
 from src.database.models import User
 from src.repository import analytics as repository_analytics
-from src.schemas import PostAnalyticsListResponseSchema
 from src.services.auth import auth_service
 
 router = APIRouter(prefix="/analytics", tags=["analytics"])
 
 
-@router.get("/post/{post_id}/likes-dislikes", response_model=PostAnalyticsListResponseSchema)
+@router.get("/post/{post_id}/likes-dislikes")
 async def get_post_likes_dislikes(
     post_id: int,
     start_date: date,
@@ -32,5 +31,5 @@ async def get_post_likes_dislikes(
     analytics_data = await repository_analytics.get_post_analytics(
         post_id, start_date, end_date, current_user, db
     )
-    response_model = PostAnalyticsListResponseSchema(analytics_data=analytics_data)
-    return response_model
+
+    return analytics_data

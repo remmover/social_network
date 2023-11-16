@@ -56,7 +56,6 @@ class Post(Base):
         likes (int): The number of likes received by the post.
         dislikes (int): The number of dislikes received by the post.
         created_at (date): The date and time when the post was created.
-        updated_at (date): The date and time when the post was last updated.
 
     Relationships:
         user (relationship): A many-to-one relationship with the User model, representing the post's author.
@@ -68,7 +67,6 @@ class Post(Base):
     likes: Mapped[int] = mapped_column(Integer, default=0)
     dislikes: Mapped[int] = mapped_column(Integer, default=0)
     created_at: Mapped[date] = mapped_column("created_at", DateTime, default=func.now())
-    updated_at: Mapped[date] = mapped_column("updated_at", DateTime, default=func.now(), onupdate=func.now())
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id"), nullable=False)
     user: Mapped["User"] = relationship("User", backref="posts", lazy="joined")
 
