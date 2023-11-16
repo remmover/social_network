@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2d4e96-db2a-4337-89db-038b92cef27c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Mein\Projects\Tests_for_work\social_network\docs\_build\html" />
       <recent name="C:\Mein\Projects\Tests_for_work\social_network" />
       <recent name="C:\Mein\Projects\Tests_for_work\social_network\src" />
     </key>
@@ -130,7 +131,7 @@
       <workItem from="1700155023561" duration="733000" />
       <workItem from="1700157896856" duration="453000" />
       <workItem from="1700158485453" duration="3692000" />
-      <workItem from="1700162357267" duration="1552000" />
+      <workItem from="1700162357267" duration="1868000" />
     </task>
     <servers />
   </component>
