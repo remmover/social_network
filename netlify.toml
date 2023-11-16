@@ -1,4 +1,4 @@
-cat <<EOF > netlify.toml
+cat EOF netlify.toml
 [build]
     publish = "_build/html"
     command = "make html"
