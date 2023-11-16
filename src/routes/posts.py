@@ -12,7 +12,7 @@ from src.services.auth import auth_service
 router = APIRouter(prefix="/posts", tags=["posts"])
 
 
-@router.post("/", response_model=PostCreateResponseSchema)
+@router.post("/create", response_model=PostCreateResponseSchema)
 async def create_post(
     content: str,
     current_user: User = Depends(auth_service.get_current_user),

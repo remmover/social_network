@@ -150,7 +150,7 @@ class Auth:
         except JWTError:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
-                detail=messages.VALIDATE_CREDENTIALS,
+                detail=messages.INVALID_CREDENTIALS,
             )
 
     async def get_current_user(
@@ -168,7 +168,7 @@ class Auth:
         """
         credentials_exception = HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail=messages.VALIDATE_CREDENTIALS,
+            detail=messages.INVALID_CREDENTIALS,
             headers={"WWW-Authenticate": "Bearer"},
         )
 

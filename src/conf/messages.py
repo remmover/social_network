@@ -1,7 +1,7 @@
 """Authentication and Account-related"""
 INVALID_TOKEN = "Invalid token for email verification"
 INVALID_SCOPE_TOKEN = "Invalid scope for token"
-VALIDATE_CREDENTIALS = "Could not validate credentials"
+INVALID_CREDENTIALS = "Could not validate credentials"
 ACCOUNT_EXIST = "Account already exists"
 INVALID_EMAIL = "Invalid email"
 EMAIL_NOT_CONFIRMED = "Email not confirmed"

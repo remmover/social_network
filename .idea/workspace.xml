@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1e2d4e96-db2a-4337-89db-038b92cef27c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conf/messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conf/messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +103,7 @@
       <workItem from="1700045832738" duration="355000" />
       <workItem from="1700046317255" duration="5935000" />
       <workItem from="1700058746602" duration="13414000" />
+      <workItem from="1700128723402" duration="647000" />
     </task>
     <servers />
   </component>
@@ -105,5 +112,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/social_network$main.coverage" NAME="main Coverage Results" MODIFIED="1700071833848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/social_network$automated_bot.coverage" NAME="automated_bot Coverage Results" MODIFIED="1700074526444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
