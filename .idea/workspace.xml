@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2d4e96-db2a-4337-89db-038b92cef27c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
-    </list>
+    <list default="true" id="1e2d4e96-db2a-4337-89db-038b92cef27c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +128,7 @@
       <workItem from="1700155023561" duration="733000" />
       <workItem from="1700157896856" duration="453000" />
       <workItem from="1700158485453" duration="3692000" />
-      <workItem from="1700162357267" duration="625000" />
+      <workItem from="1700162357267" duration="923000" />
     </task>
     <servers />
   </component>
